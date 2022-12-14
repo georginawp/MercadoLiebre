@@ -1,0 +1,135 @@
+@import "styles.css";
+
+
+header {
+    position:fixed;
+    top:0;
+}
+
+main {
+    display: flex;
+    background-color: #ebebeb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    margin: 2rem;
+    margin-top: 25rem;
+}
+
+#registrationForm {
+    width: 90%;
+    
+}
+
+.field {
+    display: block;
+    margin-bottom: 2rem;
+    padding: 1em;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.field input {
+    width: 100%;
+    outline: none;
+}
+
+
+.newsletter{
+    margin-top: 20px;
+}
+
+
+.interests div {
+    margin-bottom: 2rem;
+
+}
+
+.interests label input {
+    margin-right: 16px;
+}
+
+
+
+#photo-user {
+    width: 18em;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttons button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #03264C;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+#buttons button:hover {
+    background-color:#0022AA;
+ }
+
+section:not(.search, .fee) {
+    padding: 3%;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+#comprador {
+    margin-right: 2em;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+ position: relative;
+ right: -5%;
+ color: rgb(118,118,118); 
+}
+
+input[type="date"] {
+    color: rgb(118,118,118);
+}
+
+
+@media (min-width:420px) {
+    header {
+        position: static;
+        
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .date {
+        width: 30%;
+    }
+  
+}
+
+@media (min-width:769px) {
+    
+    header {
+        position: static; 
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .date {
+        width: 30%;
+    }
+        
+}
+  
+
+
+

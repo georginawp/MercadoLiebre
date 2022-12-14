@@ -1,0 +1,81 @@
+@import "styles.css";
+
+header {
+    position:fixed;
+    top:0;
+}
+
+main {
+    display: flex;
+    background-color: #ebebeb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 25rem;
+}
+
+.form-login {
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.field input {
+    padding: 0.75rem 0;
+}
+
+input {
+    display: block;
+}
+
+button, input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+
+.button-entry button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #03264C;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.button-entry button:hover {
+    background-color:#0022AA;
+}
+
+
+form {
+    display: block;
+}
+
+
+.field {
+    display: block;
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+
+
+@media (min-width:420px) {
+    header {
+        position: static;
+        
+    }
+
+    main {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:769px) {
+}

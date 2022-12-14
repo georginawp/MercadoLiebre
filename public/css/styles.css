@@ -1,0 +1,336 @@
+
+@import url(normalize.css);
+
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+    background-color: #EAC926;
+}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding:2rem 1em;
+}
+
+.search {
+    background-color: #ffff;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
+    flex-grow:1;
+}
+
+.search form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin:0.5rem;
+}
+
+
+.loupeIcon {
+    background-color:white;
+    justify-self:flex-end;
+    display: inline;
+}
+
+.searchField {
+    width: 100%;
+    display: inline;
+}
+
+.searchField input {
+    outline: none;
+    width: 100%;
+}
+
+button, input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+}
+
+.fee    {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.fee div {
+    display: inline;
+}
+
+p, li {
+    font-size: 12px;
+}
+
+nav{
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+#banner img {
+    width: 100vw;
+}
+
+img {
+    max-width: 100%;
+    vertical-align:top;
+    
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+#logo {
+    width: 45%;
+    flex-grow:1 ;
+    padding: 1em;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu {
+    display: inline-block;
+    padding: 1%;
+    background-color: #03264C;
+    border-radius: 15%;
+}
+
+.burger-menu .fas {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.main {
+    padding: 0 5%;
+  
+}
+
+.main article {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-areas: 
+    "pago"
+    "envio"
+    "seguridad";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: #fff;
+}
+
+footer i {
+    color:#03264C;
+}
+
+.payment {
+    grid-area: pago;
+    margin-bottom: 2rem;
+}
+
+.shipping {
+    grid-area: envio;
+    margin-bottom: 2rem;
+}
+
+.security {
+    grid-area: seguridad;
+    margin-bottom: 2rem;
+}
+
+.security .fas:hover {
+    color:#0022AA;
+}
+
+#copyright {
+    color: #6e6f72;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    margin-left: -7rem;
+}
+
+
+.payment .fas:hover {
+    color:#0022AA;
+}
+
+.shipping .fas:hover {
+    color:#0022AA;
+}
+
+
+
+@media (min-width:420px) {
+
+    #logo {
+        width: 30%;
+    }
+
+    .search {
+        width: 30%;
+    }
+
+    .fee {
+        width: 30%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;  
+        padding: 0; 
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-areas: 
+            "pago envio seguridad";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+        padding: 2rem 2rem;
+        background-color: #fff;
+    }
+
+    footer section {
+        padding: 8%;
+      }
+
+
+      #Copyright {
+        position:relative;
+        margin-left: -8em;
+        bottom: -23px;
+      }
+
+}
+
+
+@media (min-width:769px) {
+
+    #logo {
+        width: 30%;
+    }
+
+    .search {
+        width: 30%;
+    }
+
+    .fee{
+        width: 30%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 0; 
+    }
+
+    .burger-menu {
+        display: none;
+    }
+ 
+    footer {
+        display: grid;
+        grid-template-areas: 
+            "pago envio seguridad";
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        padding: 2rem 2rem;
+        background-color: #fff;
+    }
+
+  footer section {
+    padding: 10%;
+  }
+
+  #Copyright {
+    position:relative;
+    margin-left: -8em;
+    bottom: -23px;
+  }
+}
+
+
